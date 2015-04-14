@@ -130,7 +130,7 @@ public class SiteDao {
 	
  /* below is cited from https://github.com/jannunzi/CS5200/blob/master/JWS_JPA/src/example/SolutionDao.java*/
  /* should use Class Sites */	
-	
+/*	
 	public void exportSiteDatabaseToXmlFile(Sites list, String xmlFileName) {
 		File xmlFile = new File(xmlFileName);
 		try {
@@ -143,9 +143,9 @@ public class SiteDao {
 			e.printStackTrace();
 		}
 	}
-
+*/    
 	 /* below is cited from https://github.com/jannunzi/CS5200/blob/master/JWS_JPA/src/example/SolutionDao.java*/
-
+/*
 	public void convertXmlFileToOutputFile(String inputXmlFileName,String outputXmlFileName,String xsltFileName)
 	{
 		//open file
@@ -170,7 +170,7 @@ public class SiteDao {
 			e.printStackTrace();
 		}
 	}
-
+This part is not required in the Homework description*/
 	
 	public static void main(String[] args) {
 		SiteDao dao = new SiteDao();
@@ -182,10 +182,10 @@ public class SiteDao {
 			System.out.println(sitelist.getId());
 		}
 
-	//  I have some problems in this part. cited from Class Resources
+	//  Do not be required in the Homework description. cited from Class Resources
 		
-		dao.convertXmlFileToOutputFile("xml/sites.xml", "xml/sites.html", "xml/sites2html.xslt");
-		dao.convertXmlFileToOutputFile("xml/sites.xml", "xml/equipments.html", "xml/sites2equipment.xslt");
+	//	dao.convertXmlFileToOutputFile("xml/sites.xml", "xml/sites.html", "xml/sites2html.xslt");
+	//	dao.convertXmlFileToOutputFile("xml/sites.xml", "xml/equipments.html", "xml/sites2equipment.xslt");
 		
 	}
 }
